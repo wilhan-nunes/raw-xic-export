@@ -6,7 +6,7 @@ import os
 raw_files_path = '/Users/wilhan/Downloads/'
 output_path = '/Users/wilhan/PycharmProjects/Raw_parser'
 # Filter only raw files
-raw_files = [file for file in os.listdir(raw_files_path) if file.split('.')[-1].casefold() == 'raw']
+raw_files = [file for file in os.listdir(raw_files_path) if file.endswith('.raw')]
 
 # For execution with docker you need it to be installed on your computer
 # you can also install the thermorawfileparser locally if you are using windows or linux
